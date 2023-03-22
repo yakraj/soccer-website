@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soccer Website</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="social">
+        <div class="social-medias">
+          <div class="login">
+            <img src="./assets/person.svg" alt="login" class="loginimage" />
+            <p>login</p>
+          </div>
+          <div class="socialmedia">
+            <img src="./assets/twitter.svg" alt="twitter" /><img
+              src="./assets/facebook.svg"
+              alt="facebook"
+            /><img src="./assets/internet.svg" alt="internet" /><img
+              src="/assets/youtube.svg"
+              alt="youtube"
+            /><img src="" alt="" />
+          </div>
+        </div>
+        <div><div class="socials"></div></div>
+      </div>
+      <div class="top-navbar">
+        <nav class="topnav-items">
+          <img
+            style="opacity: 1"
+            src="./assets/soccor logo.webp"
+            alt="soccer"
+            class="soccer-text"
+          />
+          <div class="navitems">Home</div>
+          <div class="pages-hover" class="navitems">
+            Pages
+            <ul class="subnav-items">
+              <li>Tools</li>
+              <li>Features</li>
+              <li>About us</li>
+              <li>player's profile</li>
+              <li>contact us</li>
+              <li>match report</li>
+              <li>error 404</li>
+              <li>gallery</li>
+            </ul>
+          </div>
+          <div class="navitems">Features & results</div>
+          <div class="navitems">League table</div>
+          <div class="navitems">team</div>
+          <div class="navitems">news</div>
+          <div class="navitems">fan shop</div>
+          <div class="navitems">cart</div>
+          <div class="navitems">checkout</div>
+          <input id="searchInput" type="text" class="searchbar" />
+          <img
+            id="searchButton"
+            src="./assets/search.svg"
+            alt="cartimge"
+            class="cartimage"
+          />
+          <img src="./assets/cart.svg" alt="cartimge" class="cartimage" />
+        </nav>
+
+        <div class="centeritems">
+          <img
+            src="./assets/soccer text.webp"
+            alt="text"
+            class="soccer-text-item"
+          />
+          <div class="soccer-player-and-ball">
+            <img
+              src="./assets/soccer player.webp"
+              width="450px"
+              alt="player"
+            /><img src="./assets/soccer.webp" alt="soccer-ball" />
+          </div>
+        </div>
+
+        <div class="bottomitems">
+          <div class="contents">
+            <div class="sidecontent">
+              <img src="./assets/fc logo.webp" alt="fc-logo" class="fclogo" />
+              <div class="clubinfo">
+                <h2>fc dallas</h2>
+                <p>major league soccer</p>
+              </div>
+            </div>
+          </div>
+          <div class="contents-center">
+            <div class="timeblocks">
+              <div><strong>6</strong><strong>7</strong></div>
+              <p>days</p>
+            </div>
+
+            <div class="timeblocks">
+              <div><strong>2</strong><strong>2</strong></div>
+              <p>hours</p>
+            </div>
+
+            <div class="timeblocks">
+              <div><strong>0</strong><strong>7</strong></div>
+              <p>minutes</p>
+            </div>
+
+            <div class="timeblocks">
+              <div><strong>0</strong><strong>5</strong></div>
+              <p>seconds</p>
+            </div>
+
+            <div class="timeblocks">
+              <div><strong>6</strong><strong>7</strong></div>
+              <p>days</p>
+            </div>
+          </div>
+          <div class="contents">
+            <div class="sidecontent">
+              <div class="clubinfo">
+                <h2>D.C United</h2>
+                <p>major league soccer</p>
+              </div>
+              <img src="./assets/dc logo.webp" alt="fc-logo" class="fclogo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var searchInput = document.getElementById("searchInput");
+    var searchButton = document.getElementById("searchButton");
+    var searchexpand = false;
+    searchButton.addEventListener("click", () => {
+      if (!searchexpand) {
+        searchInput.style.width = "90px";
+        searchInput.style.background = "transparent";
+        searchInput.style.border = "1px solid grey";
+        searchexpand = true;
+      } else {
+        searchInput.style.width = "0px";
+        searchInput.style.background = "transparent";
+        searchInput.style.border = "0px";
+        searchexpand = false;
+      }
+    });
+  </script>
+</html>
